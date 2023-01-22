@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 function addTwo(num) {
     return num + 2;
 }
@@ -18,3 +20,16 @@ var loginUser = function (name, isPaid) {
     if (isPaid === void 0) { isPaid = false; }
 };
 loginUser("blue");
+// How to give the function return a type
+// After setting the params of the function, type :type after the ()
+var getHello = function (s) {
+    return s;
+};
+// Best practice for the function that turns nothing is to give the function a type: void
+function consoleError(errmsg) {
+    console.log(errmsg);
+}
+// To handle a function that throw an error, use the type NEVER
+function handleError(errmsg) {
+    throw new Error(errmsg);
+}

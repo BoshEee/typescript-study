@@ -22,4 +22,23 @@ let loginUser = (name: string, isPaid: boolean = false) => {}
 
 loginUser("blue")
 
+
+// How to give the function return a type
+// After setting the params of the function, type :type after the ()
+const getHello = (s: string): string => {
+    return s
+}
+
+// Best practice for the function that turns nothing is to give the function a type: void
+function consoleError(errmsg: string): void {
+    console.log(errmsg)
+}
+
+// To handle a function that throw an error, use the type NEVER
+// the never type represents values which are never observed. The function here throws an exception
+// or terminates execution of the program
+function handleError(errmsg: string): never{
+    throw new Error(errmsg)
+}
+
 export{}
