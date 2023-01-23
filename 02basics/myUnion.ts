@@ -44,3 +44,5 @@ const data2: (string | number)[] = ["1",2]
 // Assigning a value that never changes
 // static values 
 let seatAllotment: "aisle" | 'middle' | 'window' // these values can't change in the code later
+
+export{}
